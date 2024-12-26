@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         // Observing the LiveData
         viewModel.getCounter().observe(this, new Observer<Integer>() {
             @Override
-            public void onChanged(Integer integer) {
+            public void onChanged(Integer counter) {
                 // Update the UI when the LiveData Changes
                 mainBinding.textView2.setText(""+viewModel.getCounter());
             }
